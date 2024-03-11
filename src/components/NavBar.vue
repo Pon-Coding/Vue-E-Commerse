@@ -14,9 +14,10 @@
       <router-link to="/course" class="nav-course">
         <i class="fa-solid fa-graduation-cap"></i>Course</router-link
       >
-      <router-link to="#" class="nav-about">
-        <i class="fa-solid fa-address-card"></i>About</router-link
-      >
+      <router-link to="/cart" class="nav-about">
+        <i class="fa-solid fa-cart-shopping"></i>My Cart
+        <span class="badge-number">10</span>
+      </router-link>
     </div>
     <div class="theme-mode">
       <label class="ui-switch">
@@ -35,12 +36,31 @@ export default {
 </script>
 
 <style scoped>
+.fa-cart-shopping {
+  position: relative;
+}
+.badge-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  background: rgb(255, 0, 0);
+
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  right: 480px;
+}
 .nav-bar {
   width: 100%;
   position: fixed;
   top: 0;
   background-color: #2f2626;
-  height: 50px;
+  height: 60px;
 }
 .nav-container {
   width: 60%;
@@ -62,6 +82,7 @@ export default {
   border-radius: 10px;
 }
 .fa-solid {
+  font-size: 25px;
   display: block;
   /* display: block; */
   /* margin: 0 1%; */
