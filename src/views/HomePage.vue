@@ -1,68 +1,100 @@
 <template>
-  <body>
-    <div class="banner-box">
-      <div class="first-box">
-        <div class="box-title">
-          The <span class="one-site">#1 Site</span> for <br />
+  <body class="bg-gray-100">
+    <div
+      class="banner-box flex flex-wrap justify-between items-center py-12 px-4 md:px-12 lg:px-24 xl:px-32"
+    >
+      <div class="first-box w-full md:w-1/2 md:pr-8 lg:pr-16 xl:pr-24">
+        <div
+          class="box-title text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
+        >
+          The <span class="one-site text-blue-900">#1 Site</span> for
+          <br class="hidden md:inline" />
           E-Learning
         </div>
-        <div class="box-des">
+        <div class="box-des text-lg md:text-xl text-gray-800 mb-8">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
           veniam consequuntur quod dicta cumque vitae temporibus laudantium sit
           dolor! Animi nulla totam cum perspiciatis amet excepturi at sint
           exercitationem voluptate?
         </div>
-        <button class="btn-start">
+        <button
+          class="btn-start px-8 py-3 bg-blue-900 text-white text-lg md:text-xl font-bold rounded-lg mr-4"
+        >
           <i class="fa-solid fa-graduation-cap"></i> START LEARN TODAY!
-        </button>
-        <button class="btn-start">
-          <i class="fa-solid fa-circle-info"></i> ABOUT COURSE!
         </button>
       </div>
 
-      <div class="second-box">
-        <img class="img-banner" src="@/assets/image_1.svg" alt="" />
+      <div class="second-box w-full md:w-1/2 mt-8 md:mt-0">
+        <img
+          class="img-banner mx-auto w-3/4 md:w-full"
+          src="@/assets/image_1.svg"
+          alt=""
+        />
       </div>
     </div>
 
     <!-- About Course -->
-    <div class="detail-box">
-      <div class="image-detail-container">
-        <img class="img-detail" src="@/assets/programing.svg" alt="" />
+    <div
+      class="detail-box flex flex-wrap items-center py-12 px-4 md:px-12 lg:px-24 xl:px-32"
+    >
+      <div
+        class="image-detail-container w-full md:w-1/2 md:pr-8 lg:pr-16 xl:pr-24"
+      >
+        <img class="img-detail w-full" src="@/assets/programing.svg" alt="" />
       </div>
-      <div class="about-course-box">
-        <div class="title">#COURSE AVAILABLE IN OUR WEBSITE</div>
+      <div class="about-course-box w-full md:w-1/2 md:pl-8 lg:pl-16 xl:pl-24">
+        <div
+          class="title text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6"
+        >
+          #COURSE AVAILABLE IN OUR WEBSITE
+        </div>
 
-        <div class="description">
+        <div class="description text-lg md:text-xl text-gray-800 mb-8">
           Master in-demand computer science skills. Launch your tech career with
           our extensive library of courses, including the latest programming
           languages.
         </div>
 
-        <div class="course-detail">
-          <div class="half-box">
-            <label class="group-label">
-              <i class="fa-solid fa-circle-check"></i> 100+ Programing Languages
+        <div class="course-detail mb-8 md:mb-0 flex flex-wrap justify-between">
+          <div class="half-box w-full md:w-5/12">
+            <label
+              class="group-label flex items-center text-lg md:text-xl text-gray-800 mb-6 md:mb-4"
+            >
+              <i class="fa-solid fa-circle-check text-blue-900 mr-2"></i> 100+
+              Languages
             </label>
-            <label class="group-label">
-              <i class="fa-solid fa-circle-check"></i> Standard
+            <label
+              class="group-label flex items-center text-lg md:text-xl text-gray-800 mb-6 md:mb-4"
+            >
+              <i class="fa-solid fa-circle-check text-blue-900 mr-2"></i>
+              Standard
             </label>
-            <label class="group-label">
-              <i class="fa-solid fa-circle-check"></i> Experience Teacher 20
-              Years+
+            <label
+              class="group-label flex items-center text-lg md:text-xl text-gray-800 mb-6 md:mb-4"
+            >
+              <i class="fa-solid fa-circle-check text-blue-900 mr-2"></i>
+              Experience
             </label>
           </div>
 
-          <div class="half-box">
-            <label class="group-label">
-              <i class="fa-solid fa-circle-check"></i> Speak Khmer
+          <div class="half-box w-full md:w-5/12">
+            <label
+              class="group-label flex items-center text-lg md:text-xl text-gray-800 mb-6 md:mb-4"
+            >
+              <i class="fa-solid fa-circle-check text-blue-900 mr-2"></i> Speak
+              Khmer
             </label>
-            <label class="group-label">
-              <i class="fa-solid fa-circle-check"></i> Document in Khmer
-              Language
+            <label
+              class="group-label flex items-center text-lg md:text-xl text-gray-800 mb-6 md:mb-4"
+            >
+              <i class="fa-solid fa-circle-check text-blue-900 mr-2"></i>
+              Khmer Document
             </label>
-            <label class="group-label">
-              <i class="fa-solid fa-circle-check"></i> Certificate
+            <label
+              class="group-label flex items-center text-lg md:text-xl text-gray-800 mb-6 md:mb-4"
+            >
+              <i class="fa-solid fa-circle-check text-blue-900 mr-2"></i>
+              Certificate
             </label>
           </div>
         </div>
@@ -70,136 +102,9 @@
     </div>
   </body>
 </template>
+
 <script>
 export default {
   name: "HomePage",
 };
 </script>
-
-<style scoped>
-body {
-  padding: 0;
-  margin: 0 50px;
-  /* background-color: black; */
-}
-.banner-box {
-  float: left;
-}
-.box-title {
-  display: block;
-  font-size: 85px;
-  font-weight: bold;
-  color: black;
-  /* background-color: yellow; */
-  text-align: start;
-  /* height: 100px; */
-  width: 100%;
-}
-.one-site {
-  color: #070f2b;
-}
-.box-des {
-  margin-top: 15px;
-  color: black;
-  width: 100%;
-  display: block;
-  font-size: 20px;
-  /* background-color: yellow; */
-  text-align: start;
-}
-.btn-start {
-  width: 80%;
-  margin-top: 15px;
-  display: block;
-  background-color: #070f2b;
-  font-size: 20px;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 0;
-}
-.first-box {
-  width: 50%;
-  float: left;
-}
-.second-box {
-  width: 50%;
-  /* background-color: dodgerblue; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  float: left;
-}
-.img-banner {
-  /* background-color: red; */
-  float: left;
-  width: 80%;
-}
-
-/* About Detail */
-.about-course-box {
-  width: 50%;
-  height: 100%;
-  float: right;
-  justify-content: end;
-  /* background-color: green; */
-}
-.title {
-  display: block;
-  font-size: 30px;
-  font-weight: bold;
-  color: black;
-  /* background-color: yellow; */
-  text-align: start;
-  /* height: 100px; */
-  width: 100%;
-}
-.description {
-  margin-top: 15px;
-  color: black;
-  width: 100%;
-  display: block;
-  font-size: 20px;
-  /* background-color: yellow; */
-  text-align: start;
-}
-.course-detail {
-  background-color: yellow;
-  justify-content: start;
-  width: 100%;
-}
-.half-box {
-  float: left;
-  width: 50%;
-}
-.group-label {
-  font-size: 20px;
-  margin: 30px 0;
-  display: block;
-  display: flex;
-  justify-content: start;
-  color: black;
-}
-.fa-solid {
-  margin-right: 5px;
-}
-.fa-circle-check {
-  color: #070f2b;
-}
-.detail-box {
-  height: 300px;
-  width: 100%;
-  /* float: right; */
-}
-.image-detail-container {
-  /* background-color: red; */
-  width: 50%;
-  height: 100%;
-  float: left;
-}
-.img-detail {
-  /* width: 100%; */
-  height: 100%;
-}
-/* About Detail */
-</style>
